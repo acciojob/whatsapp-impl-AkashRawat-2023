@@ -30,7 +30,7 @@ public class WhatsappRepository {
     }
 
     public String createUser(String name, String mobile) throws Exception{
-        if(!userMobile.contains(mobile)){
+        if(userMobile.contains(mobile)){
             throw new Exception("User already exist");
         }
         User user = new User(name,mobile);
@@ -80,7 +80,7 @@ public class WhatsappRepository {
             throw new Exception("Group does not exist");
         }
             User check = adminMap.get(group);
-        if (!check.getName().equals(approver)) {
+        if (!check.getName().equals(approver.getName())) {
             throw new Exception("Approver does not have rights");
         }
             List<User> list = groupUserMap.get(group);
