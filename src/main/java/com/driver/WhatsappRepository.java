@@ -52,9 +52,9 @@ public class WhatsappRepository {
         }
     public int createMessage(String content){
         messageId++;
-        LocalDate currentDate = LocalDate.now();
-        Date date = Date.from(currentDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
-        Message message = new Message(messageId, content, date);
+//        LocalDate currentDate = LocalDate.now();
+//        Date date = Date.from(currentDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+        Message message = new Message(messageId, content);
         return message.getId();
 //        messageId++;
 //        LocalDate currentDate = LocalDate.now();
