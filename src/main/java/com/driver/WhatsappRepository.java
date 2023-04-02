@@ -90,12 +90,13 @@ public class WhatsappRepository {
         adminMap.put(group,user);
         return "SUCCESS";
     }
-    public int removeUser(User user) throws Exception{
-        return 0;
-    }
-    public String findMessage(Date start, Date end, int K) throws Exception{
-        return "";
-    }
+//    public int removeUser(User user) throws Exception{
+//        return 0;
+//    }
+//
+//    public String findMessage(Date start, Date end, int K) throws Exception{
+//        return "";
+//    }
 
 
 }
